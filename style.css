@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(38deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9473039215686274) 0%, rgba(255,102,196,1) 44%, rgba(81,112,255,1) 99%);
+}
+
+.container{
+    position: relative;
+    max-width: 750px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 50px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+#header h1, p{
+    text-align: center;
+}
+
+#header2 p{
+    text-align: left;
+    font-size: 13px;
+}
+
+.fname p{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.fname, .lname, .bday {
+    /*para magtabi dalawang text box*/
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.fname label, .lname label, .bday label {
+    /*naging isa sa taas isa sa baba LOL huhu idk basta label sha*/
+    display: block;
+    font-size: 13px;
+    color: #878585;
+    margin-top: 8px; 
+    margin-bottom: 5px; 
+}
+
+.fname input, .lname input{
+    /*haba ng mismong text box*/
+    width: 180px; 
+    /*lapad ng text box*/
+    padding: 8px; 
+    border: 1px solid #878585; 
+    border-radius: 10px; 
+}
+
+.bday input{
+    /*haba ng mismong text box*/
+    width: 250px; 
+    /*lapad ng text box*/
+    padding: 8px; 
+    border: 1px solid #878585; 
+    border-radius: 10px; 
+}
+
+.bday p{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: -150px;
+}
+
+.email, .phone {
+    /*para magtabi dalawang text box*/
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.email label, .phone label {
+    /*naging isa sa taas isa sa baba LOL huhu idk basta label sha*/
+    display: block;
+    font-size: 13px;
+    color: #878585;
+
+    margin-top: 8px; 
+    margin-bottom: 5px; 
+}
+
+.email input, .phone input{
+    /*haba ng mismong text box*/
+    width: 320px; 
+    /*lapad ng text box*/
+    padding: 8px; 
+    border: 1px solid #878585; 
+    border-radius: 10px; 
+}
+
+.email p{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.phone p{
+    margin-left: -190px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.address p{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.address label{
+    display: block;
+    font-size: 13px;
+    color: #878585;
+    margin-top: 8px; 
+    margin-bottom: 5px; 
+}
+
+.address input{
+        /*haba ng mismong text box*/
+        width: 665px; 
+        /*lapad ng text box*/
+        padding: 8px; 
+        border: 1px solid #878585; 
+        border-radius: 10px; 
+}
+
+.city, .brgy {
+    /*para magtabi dalawang text box*/
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.city option, .brgy option {
+    /*naging isa sa taas isa sa baba LOL huhu idk basta label sha*/
+    display: block;
+    font-size: 13px;
+    color: #878585;
+}
+
+.city select, .brgy select{
+    /*haba ng mismong text box*/
+    width: 320px; 
+    /*lapad ng text box*/
+    padding: 8px; 
+    border: 1px solid #878585; 
+    border-radius: 10px;
+    margin-top: 15px; 
+}
+
+.city p{
+    display: block;
+    font-size: 13px;
+    color: #878585;
+    margin-left: -290px;
+    margin-top: 8px; 
+    margin-bottom: 5px; 
+}
+
+.brgy p{
+    display: block;
+    font-size: 13px;
+    color: #878585;
+    margin-left: -250px;
+    margin-top: 8px; 
+    margin-bottom: 5px; 
+}
+
+.race p{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Hide the default radio button */
+.race input[type="radio"] {
+    display: none;
+}
+
+/* Style the custom radio button container */
+.race input[type="radio"] + label {
+    position: relative;
+    padding-left: 25px; /* Space for the custom radio button */
+    cursor: pointer;
+}
+
+/* Style the custom radio button indicator */
+.race input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* Style the custom radio button indicator when selected */
+.race input[type="radio"]:checked + label:before {
+    background-color: #000000; /* Change color when selected */
+}
+
+/* Style the text of the label when the radio button is checked */
+.race input[type="radio"]:checked + label {
+    font-weight: bold; /* Make text bold when selected */
+    color: #000000; /* Change color when selected */
+}
+
+.shirt p{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.shirt option{
+    /*naging isa sa taas isa sa baba LOL huhu idk basta label sha*/
+    display: block;
+    font-size: 13px;
+    color: #878585;
+}
+
+.shirt select{
+    /*haba ng mismong text box*/
+    width: 665px; 
+    /*lapad ng text box*/
+    padding: 8px; 
+    border: 1px solid #878585; 
+    border-radius: 10px; 
+}
+
+.glasses p{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.glasses input[type="radio"] {
+    display: none;
+}
+
+.glasses input[type="radio"] + label {
+    position: relative;
+    padding-left: 25px; /* Space for the custom radio button */
+    cursor: pointer;
+}
+
+.glasses input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.glasses input[type="radio"]:checked + label:before {
+    background-color: #000000; /* Change color when selected */
+}
+
+.glasses input[type="radio"]:checked + label {
+    font-weight: bold; /* Make text bold when selected */
+    color: #000000; /* Change color when selected */
+}
+
+.color p{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.color input[type="radio"] {
+    display: none;
+}
+
+.color input[type="radio"] + label {
+    position: relative;
+    padding-left: 25px; /* Space for the custom radio button */
+    cursor: pointer;
+}
+
+.color input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.color input[type="radio"]:checked + label:before {
+    background-color: #000000; /* Change color when selected */
+}
+
+.color input[type="radio"]:checked + label {
+    font-weight: bold; /* Make text bold when selected */
+    color: #000000; /* Change color when selected */
+}
+
+.med p{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.med input[type="radio"] {
+    display: none;
+}
+
+.med input[type="radio"] + label {
+    position: relative;
+    padding-left: 25px; /* Space for the custom radio button */
+    cursor: pointer;
+}
+
+.med input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.med input[type="radio"]:checked + label:before {
+    background-color: #000000; /* Change color when selected */
+}
+
+.med input[type="radio"]:checked + label {
+    font-weight: bold; /* Make text bold when selected */
+    color: #000000; /* Change color when selected */
+}
+
+.hear p{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.hear option{
+    /*naging isa sa taas isa sa baba LOL huhu idk basta label sha*/
+    display: block;
+    font-size: 13px;
+    color: #878585;
+}
+
+.hear select{
+    /*haba ng mismong text box*/
+    width: 665px; 
+    /*lapad ng text box*/
+    padding: 8px; 
+    border: 1px solid #878585; 
+    border-radius: 10px; 
+}
+
+.update p{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.update input[type="radio"] {
+    display: none;
+}
+
+.update input[type="radio"] + label {
+    position: relative;
+    padding-left: 25px; /* Space for the custom radio button */
+    cursor: pointer;
+}
+
+.update input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.update input[type="radio"]:checked + label:before {
+    background-color: #000000; /* Change color when selected */
+}
+
+.update input[type="radio"]:checked + label {
+    font-weight: bold; /* Make text bold when selected */
+    color: #000000; /* Change color when selected */
+}
+
+.payment p{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.receipt label{
+    display: inline-block;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ff66c4;
+    padding: 8px 16px;
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    font-size: 16px;
+    user-select: none;
+}
+
+input[type="file"]:hover + label,
+.receipt label:hover {
+    background: #ffa5dc;
+}
+
+.payment .receipt label:hover {
+    background-color: #ffa5dc;
+  }
+
+.agree p{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.agree input[type="radio"] {
+    display: none;
+}
+
+.agree input[type="radio"] + label {
+    position: relative;
+    padding-left: 25px; /* Space for the custom radio button */
+    cursor: pointer;
+}
+
+.agree input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.agree input[type="radio"]:checked + label:before {
+    background-color: #000000; /* Change color when selected */
+}
+
+.agree input[type="radio"]:checked + label {
+    font-weight: bold; /* Make text bold when selected */
+    color: #000000; /* Change color when selected */
+}
+
+.queries p{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #ff66c4; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    padding: 10px 18px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    font-size: 16px; /* Set font size */
+    margin-left: 280px;
+}
+
+/* Style the submit button on hover */
+input[type="submit"]:hover {
+    background-color: #ffa5dc; /* Change background color on hover */
+}

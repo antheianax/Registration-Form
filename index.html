@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Fun Run Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <h1>Color Fun Run 2024 Registration Form</h1>
+            <p>Get ready to be blasted with vibrant colors while you run (or walk) for a good cause!</p>
+        <div id="header2">
+            <br>
+            <p>Event Date: May 15, 2024</p>
+            <p>Venue: SM Mall of Asia</p>
+            <p>Assembly Time: 4:00 AM</p>
+        </div>    
+        <div>
+            <br>
+            <hr>
+            <br>
+            <h3>Personal Information</h3>
+        </div>
+        <form action="index2.html" method="post">
+            <div class="fname">
+                <p>Full Name</p>
+                <input type="text" id="FirstName" name="FirstName" size="25" maxlength="50" required>
+                <label for="FirstName">First Name</label>
+            </div>
+            <div class="lname">
+                <input type="text" id="LastName" name="LastName" size="25" maxlength="50" required>
+                <label for="LastName">Last Name</label>
+            </div>
+            <div class="bday">
+                <p>Date of Birth</p>
+                <input type="date" id="Birthday" name="Birthday" required>
+                <label for="Birthday">Date</label>
+            </div>
+            <div class="email">
+                <p>Email</p>
+                <input type="email" id="Email" name="Email" size="25" maxlength="50" required>
+                <label for="Email">abc@gmail.com</label>
+            </div>
+            <div class="phone">
+                <p>Phone Number</p>
+                <input type="tel" id="Phone" name="Phone" required>
+                <label for="Phone">Please enter a valid phone number.</label>
+            </div>
+            <div class="address">
+                <p>Address</p>
+                <input type="text" id="Address" name="Address" required>
+                <label for="Address">Street Address</label>
+            </div>
+            <div class="city">
+                <select name="slct1" id="slct1" onchange="populate(this.id,'slct2')" required>
+                    <option selected>Select City</option>
+                    <option value="marikina">Marikina</option>
+                    <option value="muntinlupa">Muntinlupa</option>
+                    <option value="navotas">Navotas</option>
+                    <option value="pateros">Pateros</option>
+                    <option value="sanjuan">San Juan</option>
+                </select>
+                <p>City</p>
+            </div>
+            <div class="brgy">
+                <select name="slct2" id="slct2"> required</select>
+                <p>Barangay</p>
+                </select>
+            </div>
+            <script src="js.js"></script>
+            <div>
+                <br>
+                <h3>Race Option</h3>
+            </div>
+            <div class="race">
+                <p>Fun Run Category (Distance)</p>
+                <input type="radio" id="3KM" name="Category" value="3KM" required>
+                <label for="3KM">3 KM - Inclusions: Race shirt, race bib, loot bag, soft breakfast, certificate, winner’s medal for first three finishers (PHP 250.00)</label><br>
+                <input type="radio" id="5KM" name="Category" value="5KM" required>
+                <label for="5KM">5 KM - Inclusions: Race shirt, race bib, loot bag, soft breakfast, certficate, winner’s medal for first three finishers (PHP 350.00)</label><br>
+                <input type="radio" id="10KM" name="Category" value="10KM" required>
+                <label for="10KM">10 KM - Inclusions: Race shirt, race bib, loot bag, soft breakfast, medal for all 8km finishers (PHP 500.00)</label>
+            </div>
+            <div>
+                <br>
+                <h3>Gear Up!</h3>
+            </div>
+            <div class="shirt">
+                <p>T-Shirt Size: Select your race shirt size </p>
+                <select name="Size" required>
+                    <option value="" disabled selected>Select your T-Shirt Size</option>
+                    <option value="X-Small">X-Small</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="X-Large">X-Large</option>
+                    <option value="2X-Large">2X-Large</option>
+                    <option value="3X-Large">3X-Large</option>
+                </select>
+            </div>
+            <div class="glasses">
+                <p>Sunglasses: Protect your eyes from the colorful fun! (PHP 150.00)</p>
+                <input type="radio" id="Yes1" name="YN1" value="yes1" required>
+                <label for="Yes1">Yes, please!</label><br>
+                <input type="radio" id="No1" name="YN1" value="no1" required>
+                <label for="No1">No, thanks.</label>
+            </div>
+            <div class = "color">
+                <p>Additional Color Packet (PHP 50.00)</p>
+                <input type="radio" id="Yes2" name="YN2" value="yes2" required>
+                <label for="Yes2">Yes, please!</label><br>
+                <input type="radio" id="No2" name="YN2" value="no2" required>
+                <label for="No2">No, thanks.</label>
+            </div>
+            <div>
+                <br>
+                <h3>Have Any Medical Concerns?</h3>
+            </div>
+            <div class="med">
+                <p>Do you have any pre-existing medical conditions we should be aware of? </p>
+                <input type="radio" id="Yes3" name="YN3" value="yes3" required>
+                <label for="Yes3">I have no pre-existing medical conditions.</label><br>
+                <input type="radio" id="No3" name="YN3" value="no3" required>
+                <label for="No3">I have a pre-existing medical condition, but it will not affect my participation.</label>
+            </div>
+            <div>
+                <br>
+                <h3>Stay Informed!</h3>
+            </div>
+            <div class="hear">
+                <p>How did you hear about this event?</p>
+                <select name="Size" required>
+                    <option value="" disabled selected>Select how you heard about this event</option>
+                    <option value="Friends">Friends</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Website">Website</option>
+                    <option value="Poster">Poster</option>
+                </select>
+            </div>
+            <div class="update">
+                <p>Would you like to receive update about future events?</p>
+                <input type="radio" id="Yes4" name="YN4" value="yes4" required>
+                <label for="Yes4">Yes, please!</label><br>
+                <input type="radio" id="No4" name="YN4" value="no4" required>
+                <label for="No4">No, thanks.</label>
+            </div>
+            <div>
+                <br>
+                <h3>Ready to Run?</h3>
+            </div>
+            <div class="payment">
+                <p>Proof of Payment (Gcash: 09609110616)</p>
+                <div class="receipt">
+                    <input type="file" id="choosefileBtn" name="filename" required>
+                    <label for="choosefileBtn">Upload File</label>
+                </div>
+            </div>               
+            <div class="agree">
+                <p>By registering for the Color Fun Run, I acknowledge that I have read and agree to the <a href="./Waiver.pdf" target="_blank">Terms and Conditions</a> outlined in the event waiver.</p>
+                <input type="radio" id="Agree" name="AD" value="Agree" required>
+                <label for="Agree">I agree.</label><br>
+                <input type="radio" id="Disagree" name="AD" value="Disagree" required>
+                <label for="Disagree">I disagree.</label>
+            </div>
+            <div class="queries">
+                <p><i>Any questions may be emailed to contact@gmail.com or call 0960-911-0616</i></p>
+                <input type="submit" value="SUBMIT" required>
+            </div>
+            <script src="js.js"></script>
+        </form>
+    </div>
+</body>
+</html>
