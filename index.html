@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Fun Run Registration Form</title>
+    <link rel="icon" href="./icon.png" type="image">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="container2">
+    </div>
     <div class="container">
+
         <div id="header">
             <h1>Color Fun Run 2024 Registration Form</h1>
             <p>Get ready to be blasted with vibrant colors while you run (or walk) for a good cause!</p>
@@ -57,11 +61,23 @@
             <div class="city">
                 <select name="slct1" id="slct1" onchange="populate(this.id,'slct2')" required>
                     <option selected>Select City</option>
+                    <option value="caloocan">Caloocan</option>
+                    <option value="laspiñas">Las Piñas</option>
+                    <option value="makati">Makati</option>
+                    <option value="malabon">Malabon</option>
+                    <option value="mandaluyong">Mandaluyong</option>
+                    <option value="manila">Manila</option>
                     <option value="marikina">Marikina</option>
                     <option value="muntinlupa">Muntinlupa</option>
                     <option value="navotas">Navotas</option>
+                    <option value="parañaque">Parañaque</option>
+                    <option value="pasay">Pasay</option>
+                    <option value="pasig">Pasig</option>
                     <option value="pateros">Pateros</option>
+                    <option value="quezoncity">Quezon City</option>
                     <option value="sanjuan">San Juan</option>
+                    <option value="taguig">Taguig</option>
+                    <option value="valenzuela">Valenzuela</option>
                 </select>
                 <p>City</p>
             </div>
@@ -86,7 +102,7 @@
             </div>
             <div>
                 <br>
-                <h3>Gear Up!</h3>
+                <h3>Gear Up</h3>
             </div>
             <div class="shirt">
                 <p>T-Shirt Size: Select your race shirt size </p>
@@ -128,7 +144,7 @@
             </div>
             <div>
                 <br>
-                <h3>Stay Informed!</h3>
+                <h3>Stay Informed</h3>
             </div>
             <div class="hear">
                 <p>How did you hear about this event?</p>
@@ -160,10 +176,8 @@
             </div>               
             <div class="agree">
                 <p>By registering for the Color Fun Run, I acknowledge that I have read and agree to the <a href="./Waiver.pdf" target="_blank">Terms and Conditions</a> outlined in the event waiver.</p>
-                <input type="radio" id="Agree" name="AD" value="Agree" required>
+                <input type="checkbox" id="Agree" name="AD" value="Agree" required>
                 <label for="Agree">I agree.</label><br>
-                <input type="radio" id="Disagree" name="AD" value="Disagree" required>
-                <label for="Disagree">I disagree.</label>
             </div>
             <div class="queries">
                 <p><i>Any questions may be emailed to contact@gmail.com or call 0960-911-0616</i></p>
